@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Crawler Tutorial-1：Basic Structure of a Web Page</title>
+    <url>/2018-09-11-CrawlerTutorial1_en.html</url>
+    <content><![CDATA[<p>In this era of information, everyone should notice the value of information. Wherever there is information, there is also treasure and success! If you can build your own web crawler, it will be easier for you to acquire the huge treasure in the world of Internet.  </p>
+<p>I’m a beginner in the field of web crawler. The purpose of this blog is to record my learning and hope these articles could also help you to learn web crawler. My English is not very good, so it would be appreciated if you could point out my grammar mistakes.</p>
+<h2 id="The-truth-of-a-web-page"><a href="#The-truth-of-a-web-page" class="headerlink" title="The truth of a web page"></a>The truth of a web page</h2><p>Let us open a website to have a look. It may look like this:<br><img src="https://raw.githubusercontent.com/S-W-K/Images/master/img/crawler_tutorial1_1.png"><br>With an elegant format design and some pictures.</p>
+<span id="more"></span>
+
+<p>Actually, when you right-click the web page and choose <code>View Page Source</code>(or something like this), you’ll get these stuff:<br><img src="https://raw.githubusercontent.com/S-W-K/Images/master/img/crawler_tutorial1_2.png"></p>
+<p>It looks like some kind of programming language, doesn’t it? We call it HTML(HyperText Markup Language), as you see, it’s a kind of markup language. Except HTML, a web page also contains CSS and JavaScript. They work together to build the web page what we usually see. We won’t go deep into the connections among them. </p>
+<p>Anyway, when we right-click the web page we can get its source code, and we’ll obtain the data we want from the source code. Basically, every useful content is included in labels like <code>&lt;div&gt;...&lt;/div&gt;，&lt;li&gt;...&lt;/li&gt;</code>, and labels contains attributes like <code>href=&quot;http://www.gakki.cute.com&quot;, class=&quot;Gakki&quot;</code>, or texts like <code>&gt;Gakki is my wife&lt;</code>. These links or texts contained in the labels are usually what we want to download from websites.</p>
+<h2 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h2><p>For the sake of acquiring those data from the Internet. We need a handy tool.  </p>
+<blockquote>
+<p>Life is short, you need Python.</p>
+</blockquote>
+<p>Python is really a powerful and easy-learning programming language. Everyone can handle it in a short time. It has simple syntax which is very readable, and there is an active community to support its development. Many geniuses have wrote their libraries for specifical problems. All we need to do is to <code>import</code> their libraries, use the functions they built for us. In a word, you need python and you will not regret to learn it.</p>
+<p>Python is just like designed to bulid web crawlers, coding in python is a relaxing thing.  Lots of libraries are bulit for crawlers, such as BeautifulSoup, lxml, requests, selenium, PyQuery, Urlib, regular expression, etc. I’ve used most of them. As far as I’m concerned, the following three libraries are most helpful:</p>
+<ul>
+<li>requests</li>
+<li>lxml</li>
+<li>regular expression</li>
+</ul>
+<p><strong>requests</strong> is used to send a request to a server and get a webpage source, <strong>lxml</strong> and <strong>regular expression</strong> are used to parse the page source. If you choose Chrome as your browser like me, it will be very easy to get the xpath of an element or a lable for <strong>lxml</strong> to locate. </p>
+<p>Lastly, <strong>requests</strong> and <strong>lxml</strong> are third-party libraries, you need to install them first:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install lxml</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>P.S. The series of tutorials is based on python3, and multiprocessing(A tech can help accelerate your crawler which I’ll talk about in another tutorial) is much easier to accomplish in python3 than python2.<br>So, download python3 and start your coding.</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Crawler</category>
+      </categories>
+      <tags>
+        <tag>Crawler</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Uploaded Some Pics I Took</title>
+    <url>/2018-09-16-UploadedSomePics.html</url>
+    <content><![CDATA[<p>Photo by @S-W-K</p>
+]]></content>
+      <categories>
+        <category>Photography</category>
+      </categories>
+      <tags>
+        <tag>Photography</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to simulate macOS HiDPI on a non-retina display</title>
+    <url>/2020-11-14-How-to-simulate-macOS-HiDPI-on-a-non-retina-display.html</url>
+    <content><![CDATA[<p>Many of you may have the problem that Mac Devices have a terrible display with blurry fonts when connected to an external monitor. To improve the display, we need to simulate the macOS HiDPI on a non-retina display. This article will show you how to do that.</p>
+<div class="note warning"><p>It seems Big Sur has tighten up files permissions. The old way of disabling SIP can’t modify system files anymore. But in fact, you can change HiDPI without SIP, <a href="https://github.com/mlch911">mlch911</a> has modified the script to make it work.  </p>
+</div>
+
+<blockquote>
+<p>Change <strong>Run the script</strong>‘s command  <code>bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)&quot;</code> to <code>bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/mlch911/one-key-hidpi/master/hidpi.sh)&quot; </code>.  Due to the policy of Big Sur, we no longer have access right to <code>/System/Library</code>, <a href="https://github.com/mlch911">mlch911</a> just modified the  the path in the original script to <code>/Library</code> . </p>
+</blockquote>
+<h2 id="Disable-SIP-System-Integrity-Protection-in-OS-X"><a href="#Disable-SIP-System-Integrity-Protection-in-OS-X" class="headerlink" title="Disable SIP(System Integrity Protection) in OS X"></a><del>Disable SIP(System Integrity Protection) in OS X</del></h2><span id="more"></span>
+
+<ol>
+<li>Turn off your Mac (Apple &gt; Shut Down).</li>
+<li>Hold down Command-R and press the Power button. Keep holding Command-R until the Apple logo appears.</li>
+<li>Wait for OS X to boot into the OS X Utilities window.</li>
+<li>Choose Utilities &gt; Terminal.</li>
+<li>Enter <code>csrutil disable</code>.</li>
+<li>Enter reboot.</li>
+</ol>
+<p>By the way, restoring the setting is the same procedure, just change 5’s command to <code>csrutil enable</code></p>
+<h2 id="Run-the-script"><a href="#Run-the-script" class="headerlink" title="Run the script"></a>Run the script</h2><p>Thanks to <a href="https://github.com/xzhih">xzhih</a> for providing such a handy script! All we need to do is to run the script like this:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)&quot;</span><br></pre></td></tr></table></figure>
+
+<img src="https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/img/run.jpg" style="zoom: 50%;" />
+
+<h2 id="Install-RDM"><a href="#Install-RDM" class="headerlink" title="Install RDM"></a>Install RDM</h2><p><a href="https://github.com/avibrazil/RDM">RDM</a> is a tool that lets you use MacBook Pro Retina’s highest and unsupported resolutions. Download link is <a href="http://avi.alkalay.net/software/RDM/">here</a>.</p>
+<img src="https://cloud.githubusercontent.com/assets/3484242/7100316/255a7d74-dff0-11e4-9bf9-16e726336e29.png" style="zoom:80%;" />
+
+<p>You should prefer resolutions marked with ⚡️ (lightning), which indicates the resolution is HiDPI or 2× or more dense in pixels.</p>
+<h2 id="The-end"><a href="#The-end" class="headerlink" title="The end"></a>The end</h2><p>This is all. Enjoy your high resolution.</p>
+]]></content>
+      <categories>
+        <category>OS</category>
+      </categories>
+      <tags>
+        <tag>macOS</tag>
+      </tags>
+  </entry>
+</search>
