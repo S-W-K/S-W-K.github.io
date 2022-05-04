@@ -2,33 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://s-w-k.top/messageboard/index.html</loc>
-    
-    <lastmod>2022-05-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s-w-k.top/tags/index.html</loc>
-    
-    <lastmod>2022-05-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://s-w-k.top/trending/index.html</loc>
-    
-    <lastmod>2022-05-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://s-w-k.top/2018-09-11-CrawlerTutorial1_en.html</loc>
     
     <lastmod>2022-05-04</lastmod>
@@ -66,6 +39,33 @@
   
   <url>
     <loc>https://s-w-k.top/categories/index.html</loc>
+    
+    <lastmod>2022-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s-w-k.top/messageboard/index.html</loc>
+    
+    <lastmod>2022-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s-w-k.top/tags/index.html</loc>
+    
+    <lastmod>2022-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://s-w-k.top/trending/index.html</loc>
     
     <lastmod>2022-05-04</lastmod>
     
